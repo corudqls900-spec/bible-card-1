@@ -45,8 +45,8 @@
       background-size: cover;
       background-position: center;
       display: flex; 
-      align-items: center;   /* 세로 중앙 정렬 */
-      justify-content: center; /* 가로 중앙 정렬 */
+      align-items: center;   
+      justify-content: center; 
       text-align: center;
       padding: 10px;
     }
@@ -64,14 +64,20 @@
 
     /* 글자 스타일 */
     .card-text {
-      font-family: "Times New Roman","명조체", serif; /* 명조체 */
+      font-family: "Times New Roman","명조체", serif; 
       font-size: 15px;
-      color: #333; /* 덜 쨍한 진회색 */
-      background: rgba(255, 255, 255, 0.6); /* 좀 더 투명한 배경 */
+      color: #333; 
+      background: rgba(255, 255, 255, 0.6); 
       padding: 6px 10px;
       border-radius: 8px;
       line-height: 1.6;
-      max-width: 90%; /* 너무 넓어지지 않게 */
+      max-width: 90%; 
+    }
+
+    /* 뒷면 텍스트 배경 없애기 */
+    .card-back .card-text {
+      background: none;
+      padding: 0;
     }
   </style>
 </head>
